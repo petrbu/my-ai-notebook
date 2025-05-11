@@ -1,7 +1,6 @@
 # main.py
 
 from text_cleaner import TextCleaner
-from feature_extractor import FeatureExtractor
 from sentiment_model import SentimentClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
