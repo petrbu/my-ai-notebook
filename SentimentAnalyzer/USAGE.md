@@ -8,7 +8,6 @@ This guide explains how to set up and use the Sentiment Analyzer to classify tex
 SentimentAnalyzer
 ├── src
 │   ├── text_cleaner.py       # Text normalization class  
-│   ├── feature_extractor.py  # TF-IDF vectorization  
 │   ├── sentiment_model.py    # VADER sentiment classifier  
 │   └── main.py               # End-to-end pipeline  
 ├── requirements.txt           # Project dependencies  
