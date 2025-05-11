@@ -15,7 +15,3 @@ Welcome to the Sentiment Analyzer project! This tool helps you determine whether
 ## Getting Started
 
 See the [Usage Guide](USAGE.md) for installation and running instructions.
-
----
-
-Contributions are welcome! See the LICENSE file for details.
