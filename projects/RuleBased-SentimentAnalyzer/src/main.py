@@ -4,10 +4,21 @@ from text_cleaner import TextCleaner
 from sentiment_model import SentimentClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
+from pathlib import Path
 
 def main():
-    # Load team emails dataset
-    data = pd.read_csv('data/team_emails.csv')
+    # Get the absolute path to the data directory relative to this script
+    script_dir = Path(__file__).resolve().parent
+    project_root = script_dir.parent
+    data_path = project_root / 'data' / 'team_emails.csv'
+
+    # Load team emails dataset using absolute path
+    try:
+        data = pd.read_csv(data_path)
+    except FileNotFoundError:
+        print(f"Error: Could not find the data file at {data_path}")
+        print("Make sure you have the correct data file in the data directory.")
+        return
 
     # Use the 'body' column for sentiment analysis
     email_bodies = data['body'].tolist()

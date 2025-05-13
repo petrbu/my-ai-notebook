@@ -78,3 +78,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+myennv/
+
+
+# project-specific
+docs-internal/
